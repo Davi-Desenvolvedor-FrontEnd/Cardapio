@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  body > div.corpo {
+    display: block;
+  }
+
+  header {
+    width: 100vw;
+    height: 200px;
+    padding-top: 30px;
+    position: relative;
+    overflow-x: hidden;
+
+    h1 {
+      font-size: 2.2em;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: 1.1em;
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  main {
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+
+    section {
+      h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      div.secao {
+        margin: 20px 0;
+        padding: 5px;
+
+        div#preco {
+          span {
+            font-size: 1em;
+          }
+
+          h3 {
+            font-size: 1em;
+            margin-bottom: 10px;
+          }
+        }
+
+        p {
+          font-size: 0.7em;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  header {
+    h1 {
+      font-size: 2.5em;
+    }
+
+    p {
+      font-size: 1.3em;
+    }
+
+    img {
+      width: 400px;
+    }
+  }
+
+  main {
+
+
+    section {
+      h2 {
+        margin-bottom: 40px;
+      }
+
+      div.secao {
+        margin: 10px 0;
+
+        div#preco {
+
+          h3 {
+            font-size: 1.1em;
+            margin-bottom: 1px;
+          }
+
+          span {
+            font-size: 1.1em;
+          }
+        }
+
+        p {
+          font-size: 0.8em;
+          margin-top: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media print {
+  header {
+    padding: 50px 0;
+
+    p {
+      margin-top: 30px;
+    }
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+
+  main {
+    padding: 10px 10px;
+
+    section {
+      margin-top: 30%;
+
+      div.secao {
+        margin: 20px 0;
+
+        div#preco {
+          
+          h3 {
+            font-size: 1.2em;
+          }
+
+          span {
+            font-size: 1.2em;
+          }
+        }
+
+        p {
+          font-size: 0.9em;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.338);
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
