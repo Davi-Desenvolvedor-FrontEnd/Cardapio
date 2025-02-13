@@ -1,24 +1,27 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 300px) and (max-width: 768px) {
-  body > div.corpo {
-    display: block;
+  body {
+    background-color: red;
+    div.corpo {
+      display: block;
+    }
   }
 
   header {
-    width: 100vw;
+    width: 100%;
     height: 200px;
     padding-top: 30px;
     position: relative;
     overflow-x: hidden;
 
     h1 {
-      font-size: 2.2em;
+      font-size: 2.8em;
       margin-top: 0;
     }
 
     p {
-      font-size: 1.1em;
+      font-size: 2em;
     }
 
     img {
@@ -27,9 +30,9 @@
   }
 
   main {
-    overflow-x: hidden;
     width: 100%;
-    height: calc(100% - 200px);
+    height: auto;
+    overflow-y: auto;
     padding: 10px 10px;
 
     section {
@@ -39,22 +42,22 @@
       }
 
       div.secao {
-        margin: 20px 0;
+        margin: 15px 0;
         padding: 5px;
 
         div#preco {
           span {
-            font-size: 1em;
+            font-size: 1.4em;
           }
 
           h3 {
-            font-size: 1em;
-            margin-bottom: 10px;
+            font-size: 1.3em;
+            margin-bottom: 5px;
           }
         }
 
         p {
-          font-size: 0.7em;
+          font-size: 0.9em;
           margin-top: 5px;
         }
       }
@@ -65,22 +68,23 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
   header {
     h1 {
-      font-size: 2.5em;
+      font-size: 2.9em;
+      margin-top: 80px;
     }
 
     p {
-      font-size: 1.3em;
+      font-size: 1.5em;
     }
 
     img {
       width: 400px;
+      margin-top: 50px;
     }
   }
 
   main {
-
-
     section {
+      transform: translateY(20%);
       h2 {
         margin-bottom: 40px;
       }
@@ -89,9 +93,7 @@
         margin: 10px 0;
 
         div#preco {
-
           h3 {
-            font-size: 1.1em;
             margin-bottom: 1px;
           }
 
@@ -101,7 +103,7 @@
         }
 
         p {
-          font-size: 0.8em;
+          font-size: 1em;
           margin-top: 3px;
         }
       }
@@ -133,7 +135,6 @@
         margin: 20px 0;
 
         div#preco {
-          
           h3 {
             font-size: 1.2em;
           }
